@@ -62,7 +62,7 @@ jobs:
           path: ${{ env.images_dir }}/*.7z
       - name: Upload images to Releases
         if: ${{ github.event_name == 'release' && success() }}
-        uses: svenstaro/upload-release-action@2.2.0
+        uses: svenstaro/upload-release-action@2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ env.images_dir }}/*.trx
