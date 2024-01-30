@@ -28,7 +28,7 @@ jobs:
          #  - build_variant: "mt7621-usb-2"
          #    targets: "MI-R3G JCG-AC860M NETGEAR-BZV MI-R3P R2100 RM2100 MSG1500 BELL-A040WQ"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@main
       - name: Prepare environment
         run: |
           sudo apt update
